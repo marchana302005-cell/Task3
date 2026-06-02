@@ -1,0 +1,27 @@
+#### *Results: Critical & High Vulnerabilities*
+
+*1. Critical Vulnerability*
+
+**Name** | Oracle Database Unsupported Version Detection
+**Plugin ID** | 55786
+**Severity** | Critical
+**CVSS v2.0 Base Score** | 10.0 - Highest possible severity
+**Port/Service** | 1521 / tcp / oracle_tns
+**Description** | Oracle Database 11.2.0.2.0 is installed but is no longer supported by the vendor. No new security patches will be released. Unsupported software likely contains unpatched security vulnerabilities that can be exploited remotely.
+**Risk** | Complete system compromise. Attackers can exploit known flaws with no authentication required.
+**Solution** | Upgrade to a supported version of Oracle Database such as 19c or 21c.
+**Mitigation Steps** | 1. If Oracle Database is not required for coursework, uninstall via `Control Panel > Programs`. 2. If required, download Oracle 21c from http://oracle.com. 3. Immediate action: Block inbound connections to TCP port 1521 in Windows Defender Firewall.
+
+
+*2. High Vulnerability*
+
+**Name** | Oracle TNS Listener Remote Poisoning
+**Plugin ID** | 69552
+**Severity** | High
+**CVSS v3.0 Base Score** | 7.3
+**VPR** | 4.9
+**Port/Service** | 1521 / tcp / oracle_tns
+**Description** | The Oracle TNS Listener allows remote service registration. An attacker can exploit this to redirect database traffic to a malicious server, enabling man-in-the-middle attacks, session hijacking, or denial of service.
+**Risk** | Data theft, credential capture, and disruption of database services. Exploit code maturity is rated as "Functional".
+**Solution** | Apply the workaround in Oracle's advisory.
+**Mitigation Steps** | 1. Primary fix: Upgrade Oracle Database as listed above, which patches the TNS Listener. 2. Workaround: Enable `valid node checking` in `sqlnet.ora` to restrict which IPs can connect. 3. Immediate action: Stop the Oracle TNS Listener service if not in use, or block port 1521 externally.
