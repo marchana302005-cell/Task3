@@ -7,7 +7,7 @@ Use free tools to identify common vulnerabilities on your computer.
 
 #### *Tools Used*
 - *Tenable Nessus Essentials 10.x* - Free vulnerability scanner
-- *Target*: `127.0.0.1` - Localhost, scanned my own laptop only
+- *Target*: `192.168.31.72` - Localhost, scanned my own laptop only
 - *OS*: Windows 11
 
 #### *Deliverables*
