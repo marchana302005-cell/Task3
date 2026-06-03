@@ -15,8 +15,9 @@ Use free tools to identify common vulnerabilities on your computer.
 2. *Screenshots*: 
    - Main vulnerabilities list showing 33 total findings
    - Critical finding details page: `Oracle Database Unsupported Version Detection`
-   - High finding details page
-3. *Documented Vulnerabilities*: Summary of Critical and High severity issues with fixes
+   - High finding details page:Oracle TNS listener report poisoning
+   
+     *Documented Vulnerabilities*: Summary of Critical and High severity issues with fixes
 
 #### *Result: Critical Vulnerabilities Found*
 
