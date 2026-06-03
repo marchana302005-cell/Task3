@@ -11,9 +11,9 @@ Use free tools to identify common vulnerabilities on your computer.
 - *OS*: Windows 11
 
 #### *Deliverables*
-1. *Vulnerability Scan Report*: `My Basic Network Scan` completed 8/23/2026 at 1:16 PM
+1. *Vulnerability Scan Report*:Network Scan
 2. *Screenshots*: 
-   - Main vulnerabilities list showing 31 total findings
+   - Main vulnerabilities list showing 33 total findings
    - Critical finding details page: `Oracle Database Unsupported Version Detection`
    - High finding details page
 3. *Documented Vulnerabilities*: Summary of Critical and High severity issues with fixes
@@ -25,7 +25,7 @@ Use free tools to identify common vulnerabilities on your computer.
 **Oracle Tns Listner Remote Poisoning** | High | 7.3 | Apply the workaround in Oracle's advisory.
 
 
-*Scan Summary*: 31 total findings detected. *1 Critical, 1 High, 29 Informational*. Informational findings are not vulnerabilities and were excluded from remediation.
+*Scan Summary*: 33 total findings detected. *1 Critical, 1 High,  31 Informational*. Informational findings are not vulnerabilities and were excluded from remediation.
 
 #### *Outcome*
 Completed introductory vulnerability assessment using Nessus Essentials. Learned to: 
